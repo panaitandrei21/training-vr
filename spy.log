@@ -1,0 +1,96 @@
+1731499880376|6|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select * from INFORMATION_SCHEMA.SEQUENCES|select * from INFORMATION_SCHEMA.SEQUENCES
+1731499881356|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select * from INFORMATION_SCHEMA.SEQUENCES|select * from INFORMATION_SCHEMA.SEQUENCES
+1731499881374|5|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|create table users (id bigint not null, email varchar(255), name varchar(255) not null, primary key (id))|create table users (id bigint not null, email varchar(255), name varchar(255) not null, primary key (id))
+1731499881379|1|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|create sequence users_seq start with 1 increment by 50|create sequence users_seq start with 1 increment by 50
+1731499883236|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=?|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=1
+1731499883248|1|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select next value for users_seq|select next value for users_seq
+1731499883304|1|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|insert into users (email,name,id) values (?,?,?)|insert into users (email,name,id) values ('email@db.com','name',1)
+1731499883306|0|commit|connection 0|url jdbc:p6spy:h2:mem:testdb||
+1731499898831|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=?|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=1
+1731499898835|0|commit|connection 0|url jdbc:p6spy:h2:mem:testdb||
+1731499898952|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select u1_0.id,u1_0.email,u1_0.name from users u1_0|select u1_0.id,u1_0.email,u1_0.name from users u1_0
+1731499898955|0|commit|connection 0|url jdbc:p6spy:h2:mem:testdb||
+1731499909485|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=?|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=1
+1731499909486|0|commit|connection 0|url jdbc:p6spy:h2:mem:testdb||
+1731499909488|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select u1_0.id,u1_0.email,u1_0.name from users u1_0|select u1_0.id,u1_0.email,u1_0.name from users u1_0
+1731499909489|0|commit|connection 0|url jdbc:p6spy:h2:mem:testdb||
+1731504736614|6|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select * from INFORMATION_SCHEMA.SEQUENCES|select * from INFORMATION_SCHEMA.SEQUENCES
+1731504737707|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select * from INFORMATION_SCHEMA.SEQUENCES|select * from INFORMATION_SCHEMA.SEQUENCES
+1731504737728|6|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|create table users (id bigint not null, email varchar(255), name varchar(255) not null, primary key (id))|create table users (id bigint not null, email varchar(255), name varchar(255) not null, primary key (id))
+1731504737735|2|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|create sequence users_seq start with 1 increment by 50|create sequence users_seq start with 1 increment by 50
+1731504741607|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=?|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=1
+1731504741622|1|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select next value for users_seq|select next value for users_seq
+1731504741687|1|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|insert into users (email,name,id) values (?,?,?)|insert into users (email,name,id) values ('email@db.com','name',1)
+1731504741690|0|commit|connection 0|url jdbc:p6spy:h2:mem:testdb||
+1731504741826|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=?|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=1
+1731504741830|0|commit|connection 0|url jdbc:p6spy:h2:mem:testdb||
+1731504742000|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select u1_0.id,u1_0.email,u1_0.name from users u1_0|select u1_0.id,u1_0.email,u1_0.name from users u1_0
+1731504742005|0|commit|connection 0|url jdbc:p6spy:h2:mem:testdb||
+1731660703370|1|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|drop table if exists users cascade |drop table if exists users cascade 
+1731660703372|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|drop sequence if exists users_seq|drop sequence if exists users_seq
+1731660703382|2|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|create sequence users_seq start with 1 increment by 50|create sequence users_seq start with 1 increment by 50
+1731660703392|6|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|create table users (id bigint not null, email varchar(255), name varchar(255) not null, primary key (id))|create table users (id bigint not null, email varchar(255), name varchar(255) not null, primary key (id))
+1731660705939|6|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=?|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=1
+1731660705963|1|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select next value for users_seq|select next value for users_seq
+1731660706011|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|insert into users (email,name,id) values (?,?,?)|insert into users (email,name,id) values ('email@db.com','name',1)
+1731660706012|0|commit|connection 0|url jdbc:p6spy:h2:mem:testdb||
+1731660797830|1|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|drop table if exists users cascade |drop table if exists users cascade 
+1731660797831|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|drop sequence if exists users_seq|drop sequence if exists users_seq
+1731660797838|1|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|create sequence users_seq start with 1 increment by 50|create sequence users_seq start with 1 increment by 50
+1731660797846|4|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|create table users (id bigint not null, email varchar(255), name varchar(255) not null, primary key (id))|create table users (id bigint not null, email varchar(255), name varchar(255) not null, primary key (id))
+1731660799817|6|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=?|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=1
+1731660799841|1|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select next value for users_seq|select next value for users_seq
+1731660799888|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|insert into users (email,name,id) values (?,?,?)|insert into users (email,name,id) values ('email@db.com','name',1)
+1731660799890|0|commit|connection 0|url jdbc:p6spy:h2:mem:testdb||
+1731660863482|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=?|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=1
+1731660863488|0|commit|connection 0|url jdbc:p6spy:h2:mem:testdb||
+1731660863631|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select u1_0.id,u1_0.email,u1_0.name from users u1_0|select u1_0.id,u1_0.email,u1_0.name from users u1_0
+1731660863635|0|commit|connection 0|url jdbc:p6spy:h2:mem:testdb||
+1731661050502|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|drop table if exists users cascade |drop table if exists users cascade 
+1731661050503|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|drop sequence if exists users_seq|drop sequence if exists users_seq
+1731661050509|1|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|create sequence users_seq start with 1 increment by 50|create sequence users_seq start with 1 increment by 50
+1731661050516|4|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|create table users (id bigint not null, email varchar(255), name varchar(255) not null, primary key (id))|create table users (id bigint not null, email varchar(255), name varchar(255) not null, primary key (id))
+1731661052361|5|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=?|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=1
+1731661052382|1|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select next value for users_seq|select next value for users_seq
+1731661052431|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|insert into users (email,name,id) values (?,?,?)|insert into users (email,name,id) values ('email@db.com','name',1)
+1731661052433|0|commit|connection 0|url jdbc:p6spy:h2:mem:testdb||
+1731661059024|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=?|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=1
+1731661059030|0|commit|connection 0|url jdbc:p6spy:h2:mem:testdb||
+1731661059178|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select u1_0.id,u1_0.email,u1_0.name from users u1_0|select u1_0.id,u1_0.email,u1_0.name from users u1_0
+1731661059183|0|commit|connection 0|url jdbc:p6spy:h2:mem:testdb||
+1731661201947|1|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|drop table if exists users cascade |drop table if exists users cascade 
+1731661201948|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|drop sequence if exists users_seq|drop sequence if exists users_seq
+1731661201955|2|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|create sequence users_seq start with 1 increment by 50|create sequence users_seq start with 1 increment by 50
+1731661201963|4|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|create table users (id bigint not null, email varchar(255), name varchar(255) not null, primary key (id))|create table users (id bigint not null, email varchar(255), name varchar(255) not null, primary key (id))
+1731661204120|6|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=?|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=1
+1731661204142|1|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select next value for users_seq|select next value for users_seq
+1731661204188|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|insert into users (email,name,id) values (?,?,?)|insert into users (email,name,id) values ('email@db.com','name',1)
+1731661204190|0|commit|connection 0|url jdbc:p6spy:h2:mem:testdb||
+1731661221338|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|drop table if exists users cascade |drop table if exists users cascade 
+1731661221339|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|drop sequence if exists users_seq|drop sequence if exists users_seq
+1731661221345|1|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|create sequence users_seq start with 1 increment by 50|create sequence users_seq start with 1 increment by 50
+1731661221352|3|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|create table users (id bigint not null, email varchar(255), name varchar(255) not null, primary key (id))|create table users (id bigint not null, email varchar(255), name varchar(255) not null, primary key (id))
+1731661223154|5|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=?|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=1
+1731661223171|1|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select next value for users_seq|select next value for users_seq
+1731661223214|1|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|insert into users (email,name,id) values (?,?,?)|insert into users (email,name,id) values ('email@db.com','name',1)
+1731661223217|0|commit|connection 0|url jdbc:p6spy:h2:mem:testdb||
+1731661246988|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=?|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=1
+1731661246993|0|commit|connection 0|url jdbc:p6spy:h2:mem:testdb||
+1731661247120|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select u1_0.id,u1_0.email,u1_0.name from users u1_0|select u1_0.id,u1_0.email,u1_0.name from users u1_0
+1731661247123|0|commit|connection 0|url jdbc:p6spy:h2:mem:testdb||
+1731661334201|0|statement|connection 10|url jdbc:p6spy:h2:mem:testdb|drop table if exists users cascade |drop table if exists users cascade 
+1731661334202|0|statement|connection 10|url jdbc:p6spy:h2:mem:testdb|drop sequence if exists users_seq|drop sequence if exists users_seq
+1731661334203|0|statement|connection 10|url jdbc:p6spy:h2:mem:testdb|create sequence users_seq start with 1 increment by 50|create sequence users_seq start with 1 increment by 50
+1731661334205|1|statement|connection 10|url jdbc:p6spy:h2:mem:testdb|create table users (id bigint not null, email varchar(255), name varchar(255) not null, primary key (id))|create table users (id bigint not null, email varchar(255), name varchar(255) not null, primary key (id))
+1731661335675|0|statement|connection 10|url jdbc:p6spy:h2:mem:testdb|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=?|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=1
+1731661335678|0|statement|connection 10|url jdbc:p6spy:h2:mem:testdb|select next value for users_seq|select next value for users_seq
+1731661335681|0|statement|connection 10|url jdbc:p6spy:h2:mem:testdb|insert into users (email,name,id) values (?,?,?)|insert into users (email,name,id) values ('email@db.com','name',1)
+1731661335682|0|commit|connection 10|url jdbc:p6spy:h2:mem:testdb||
+1731661469342|1|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|drop table if exists users cascade |drop table if exists users cascade 
+1731661469344|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|drop sequence if exists users_seq|drop sequence if exists users_seq
+1731661469352|2|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|create sequence users_seq start with 1 increment by 50|create sequence users_seq start with 1 increment by 50
+1731661469362|5|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|create table users (id bigint not null, email varchar(255), name varchar(255) not null, primary key (id))|create table users (id bigint not null, email varchar(255), name varchar(255) not null, primary key (id))
+1731661471658|5|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=?|select u1_0.id,u1_0.email,u1_0.name from users u1_0 where u1_0.id=1
+1731661471677|1|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|select next value for users_seq|select next value for users_seq
+1731661471719|0|statement|connection 0|url jdbc:p6spy:h2:mem:testdb|insert into users (email,name,id) values (?,?,?)|insert into users (email,name,id) values ('email@db.com','name',1)
+1731661471721|0|commit|connection 0|url jdbc:p6spy:h2:mem:testdb||

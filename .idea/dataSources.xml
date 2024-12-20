@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="h2" uuid="d14dce0a-65d4-4401-8ad0-7ae36e332044">
+      <imported>true</imported>
+      <configured-by-url>true</configured-by-url>
+      <remarks>$PROJECT_DIR$/spring/spring-transaction/src/main/resources/application.properties</remarks>
+      <jdbc-driver>com.p6spy.engine.spy.P6SpyDriver</jdbc-driver>
+      <jdbc-url>jdbc:p6spy:h2:tcp://localhost:9092/</jdbc-url>
+      <jdbc-additional-properties>
+        <property name="com.intellij.clouds.kubernetes.db.enabled" value="false" />
+      </jdbc-additional-properties>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>
